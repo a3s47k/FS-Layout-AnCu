@@ -1,0 +1,536 @@
+
+body
+	.no-gutters
+		padding-left: 0
+		padding-right: 0
+
+	.home-slider
+		.owl-one
+			.item
+				figure
+					position: relative
+					img
+						width: 100%
+						min-height: 12rem
+					figcaption
+						transition: 0.25s all ease-in-out
+						width: 100%
+						height: 37%
+						+pad(null 2rem null 2rem)
+						word-spacing: 1px
+						word-wrap: break-word
+						+pos(abs,null null 0 50%)
+						transform: translateX(-50%)
+						background: linear-gradient(0, rgba(#000,0.8), rgba(#fff,0))
+						overflow: hidden
+						.text-slider
+							color: #fff
+							text-align: center
+							font-size: 1rem
+						
+			.owl-dots
+				+pos(abs,null null 5.5rem 50%)
+				transform: translateX(-50%)
+			.owl-nav
+				padding-bottom: 3rem
+				.owl-next,.owl-prev
+					outline: none
+					width: 3rem
+					height: 3rem
+					background: rgba(#000,0.2)
+					color: #fff
+					
+					line-height: 3rem
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					span
+						font-size: 2rem
+					&:hover
+						background: rgba(#000,0.5)
+		@media (min-width:328px)
+			.owl-one
+				.item
+					figure
+						
+						img
+							
+						figcaption
+							height: 25%
+							.text-slider
+									
+		+media-breakpoint-up(sm)
+			.owl-one
+				.item
+					figure
+						figcaption
+							height: 20%
+							.text-slider
+								font-size: 1.3rem
+		+media-breakpoint-up(md)
+			.owl-one
+				.owl-nav
+					padding-bottom: 0
+				.item
+					figure
+						figcaption
+							height: 20%
+							.text-slider
+								font-size: 1.5rem
+				.owl-nav
+					.owl-prev,.owl-next
+						+pos(abs,50% null null null)
+						transform: translateY(-50%) 
+						width: 2rem
+						height: 2rem
+						line-height: 2rem
+						border-radius: 0
+						z-index: 99
+						span
+							font-size: 1rem
+					.owl-prev
+						left: 2rem
+					.owl-next
+						right: 2rem
+				.owl-dots
+					+pos(abs,null null 2rem 50%)
+		+media-breakpoint-up(lg)
+			.owl-one
+				.item
+					figure
+						figcaption
+
+							.text-slider
+								font-size: 1.8rem
+				.owl-dots
+					+pos(abs,null null 3rem 50%)
+		+media-breakpoint-up(xl)
+			.owl-one
+				.item
+					figure
+						figcaption
+
+							.text-slider
+								font-size: 2.2rem
+							
+	.article-area
+		margin-top: -1.6rem
+		.box
+			background: #5A7F9D
+			height: 99.5%
+			width: 99.5%
+			position: relative
+			
+			.box-text
+				+pos(abs,null null 1rem 1rem)
+				color: #fff
+				word-wrap: break-word
+				text-align: left
+				width: 8rem
+				font-size: 1.7rem
+				font-weight: 500
+			img
+				height: 100%
+				width: 100%
+			.text-area
+				+pos(abs,null null 1rem 0)
+				color: #fff
+				background: #5A7F9D
+				width: 7rem
+				height: 2.5rem
+				display: flex
+				justify-content: center
+				align-items: center
+				font-size: 1.2rem
+			span
+				+pos(abs,null null 2rem 7.1rem)
+				width: 2rem
+				display: flex
+				justify-content: center
+				align-items: center
+				height: 2.5rem
+				background: #5A7F9D
+				i
+					color: #fff
+					font-size: 1.2rem
+	.article-intro
+		iframe
+			min-height: 20rem
+		.intro-text
+			+pad(2rem 2rem 2rem 2rem)
+			text-align: left
+			h3
+				
+				font-size: 1.5rem
+				text-transform: uppercase
+				font-weight: 600
+				color: #5A7F9D
+			.intro-detail
+				text-align: justify
+				word-wrap: break-word
+				font-size: 1rem
+				font-weight: 400
+			a
+				text-decoration: none
+				color: #5A7F9D
+				span
+					margin-left: 0.5rem
+					i
+						font-size: 1.2rem
+		+media-breakpoint-up(sm)
+			.intro-text
+				
+				h3
+				.intro-detail
+					font-size: 1.1rem
+				a
+					span
+						i
+		+media-breakpoint-up(md)
+			.intro-text
+				width: 28rem
+				
+				.intro-detail
+					font-size: 1.1rem
+				a
+					
+					span
+						margin-left: 0.5rem
+						i
+		+media-breakpoint-up(lg)
+			.intro-text
+				+pad(5rem 3rem 3rem 5rem)
+				width: 35rem
+				h3
+					font-size: 1.8rem
+				.intro-detail
+					font-size: 1.1rem
+				a
+					
+					span
+						margin-left: 0.5rem
+						i
+		+media-breakpoint-up(xl)
+			.intro-text
+				width: 35rem
+				.intro-detail
+					font-size: 1.1rem
+				a
+					
+					span
+						margin-left: 0.5rem
+						i
+	.article-chart
+		
+		background: #F1F1F2
+		.chart-text
+			min-height: 14.28rem
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-flow: column nowrap
+			.chart-number
+				font-size: 3rem
+				font-weight: 700
+				color: #5A7F9D
+				line-height: 2rem
+			.chart-detail
+				font-size: 1rem
+				font-weight: 400
+				color: #5A7F9D
+	.article-special
+		.owl-two
+			.owl-nav
+				.owl-prev,.owl-next
+					+pos(abs,85% 5% null null)
+					
+					z-index: 99
+					outline: none
+					width: 2rem
+					height: 2rem
+					background: rgba(#fff,0.6)
+					border-radius: 50%
+					overflow: hidden
+					color: none
+					span
+						font-size: 1.5rem
+						line-height: 1.5rem
+					&:hover
+						background: rgba(#fff,0.8)
+						color: #000
+				.owl-prev
+					right: 5rem
+				.owl-next
+					right: 2rem
+			.item
+				img
+					margin-top: 0.15rem
+					width: 100%
+				
+				.box-content
+					width: 100%
+					height: 100%
+					text-align: center
+					.box-1
+						margin-top: 0.15rem
+						background: #5A7F9D
+						height: 50%
+						display: flex
+						justify-content: center
+						align-items: center
+						.text-box-1
+							
+							color: #fff
+							word-wrap: break-word
+							
+
+							font-size: 1.7rem
+							font-weight: 500
+					.box-2
+						display: flex
+						justify-content: center
+						align-items: center
+						height: 49.5%
+						+pad(5rem 2rem 5rem 2rem)
+						flex-flow: column nowrap
+						color: #fff
+						background: #0E1B27
+						.box-2-title
+							font-size: 1.5rem
+							font-weight: 500
+							text-transform: uppercase
+						.box-2-address
+							color: #5A7F9D
+							font-size: 1rem
+							font-weight: 400
+							text-transform: capitalize
+						.box-2-detail 
+							color: #fff
+		+media-breakpoint-up(sm)
+			.owl-two
+				.item
+					img
+
+						width: 100%
+					.box-content
+						width: 100%
+						height: 100%
+						text-align: center
+						.box-1
+							.text-box-1
+								font-size: 1.7rem
+								font-weight: 500
+						.box-2
+							height: 49.5%
+							+pad(5rem 3rem 5rem 3rem)
+							.box-2-title
+								font-size: 1.5rem
+							.box-2-address
+							.box-2-detail 
+		+media-breakpoint-up(md)
+			.owl-two
+				.item
+					img
+						width: 100%
+					.box-content
+						width: 100%
+						height: 100%
+						text-align: center
+						.box-1
+							.text-box-1
+								font-size: 1.7rem
+								font-weight: 500
+						.box-2
+							height: 49.5%
+							+pad(5rem 3rem 5rem 3rem)
+							.box-2-title
+								font-size: 1.5rem
+							.box-2-address
+							.box-2-detail 
+		+media-breakpoint-up(lg)
+			.owl-two
+				.owl-nav
+					.owl-prev,.owl-next
+						+pos(abs,85% 28% null null)
+					.owl-prev
+						right: 25rem
+					.owl-next
+				.item
+					img
+						
+						width: 100%
+						height: 100%
+					.box-content
+						width: 100%
+						height: 100%
+						position: relative
+						text-align: center
+						.box-1
+							
+							.text-box-1
+								+pos(abs,25% nulll null 1rem)
+								font-size: 1.7rem
+								width: 7rem
+								word-wrap: break-word
+								font-weight: 500
+						.box-2
+							height: 49.5%
+							text-align: justify
+							+pad(2rem 2rem 1rem 2rem)
+							.box-2-title
+								font-size: 1.2rem
+							.box-2-address
+								font-size: 0.8rem
+							.box-2-detail 
+								font-size: 0.9rem
+		+media-breakpoint-up(xl)
+			.owl-two
+				.owl-nav
+					.owl-prev,.owl-next
+						+pos(abs,85% 30% null null)
+					.owl-prev
+						right: 33rem
+					.owl-next
+				.item
+					img
+						margin-top: 0.15rem
+						width: 100%
+					.box-content
+						width: 100%
+						height: 100%
+						text-align: center
+						.box-1
+							margin-top: 0.15rem
+							.text-box-1
+								font-size: 1.7rem
+								font-weight: 500
+						.box-2
+							height: 49.5%
+							+pad(5rem 3rem 5rem 3rem)
+						
+							.box-2-title
+								font-size: 1.5rem
+							.box-2-address
+							.box-2-detail 
+	.article-project
+		.box
+			margin-top: -0.55rem
+			height: 99.5%
+			width: 99.5%
+			img
+				width: 100%
+			.text-project
+				+pos(abs,null null 0 50%)
+				transform: translateX(-50%)
+				color: #fff
+				text-align: center
+				font-weight: 500
+				
+				font-size: 1.2rem
+				text-transform: uppercase
+		+media-breakpoint-up(sm)
+			.box
+				.text-project
+					font-size: 1rem
+		+media-breakpoint-up(md)
+			.box
+				.text-project
+					font-size: 0.8rem
+		+media-breakpoint-up(lg)
+			.box
+				.text-project
+					+pos(abs,null null 0.2rem 50%)
+					font-size: 0.9rem
+		+media-breakpoint-up(xl)
+			.box
+				.text-project
+					+pos(abs,null null 0.5rem 50%)
+
+	.article-partner
+		.owl-brand
+			.item
+			
+				+pad(5rem 1rem null 1rem)
+				height: 10rem
+				width: 100%
+				
+				img
+					filter: grayscale(100%)
+					height: 4rem
+					width: 12rem
+			.owl-nav
+				.owl-prev,
+				.owl-next
+					line-height: 2rem
+					width: 2rem
+					height: 2rem
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					outline: none
+					background: rgba(#000,0.1)
+					border-radius: 0
+					span
+						font-size: 1.5rem
+						color: #fff
+					&:hover
+						background: rgba(#000,0.5)
+
+		+media-breakpoint-up(sm)
+			.owl-three
+				.item
+				
+					
+					img
+						
+				.owl-nav
+					
+					.owl-prev,
+					.owl-next
+					
+						
+		+media-breakpoint-up(md)
+			.item
+				img
+			.owl-nav
+				padding-top: 2rem
+				.owl-prev,
+				.owl-next
+		+media-breakpoint-up(lg)
+			&:hover
+				.owl-nav
+					.owl-prev,.owl-next
+						opacity: 1
+			.item
+				img
+			.owl-nav
+			
+				.owl-prev,.owl-next
+					+pos(abs,50% null null null)
+					transform:  translateY(-50%)
+					padding-top: 2rem
+					background: rgba(#000,0.1)
+					line-height: 2rem
+					width: 2rem
+					height: 2rem
+					display: inline-flex
+					justify-content: center
+					align-items: center
+					outline: none
+					border-radius: 0
+					opacity: 0
+			
+					span
+						font-size: 1.5rem
+						color: #fff
+				.owl-prev
+					position: absolute
+					left: -2.2rem
+					&:hover
+						background: rgba(#000,0.5)
+				.owl-next
+					position: absolute
+					right: -2.2rem
+					&:hover
+						background: rgba(#000,0.5)
+		+media-breakpoint-up(xl)
