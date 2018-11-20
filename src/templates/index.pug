@@ -36,27 +36,29 @@ block body
 	section.article-area
 		.container-fluid.no-gutters
 			.row.no-gutters
-				.col-12.col-sm-6.col-md-3
-					.box
-						p.box-text Lĩnh vực hoạt động
-				.col-12.col-sm-6.col-md-3
-					.box
-						img(src="./img/intro-1.png", alt="intro").img-fluid
-						p.text-area Nội thất 
-						span
-							i.fa.fa-long-arrow-right
-				.col-12.col-sm-6.col-md-3
-					.box
-						img(src="./img/intro-2.png", alt="intro").img-fluid
-						p.text-area Thiết kế
-						span
-							i.fa.fa-long-arrow-right
-				.col-12.col-sm-6.col-md-3
-					.box
-						img(src="./img/intro-3.png", alt="intro").img-fluid
-						p.text-area Xây dựng
-						span
-							i.fa.fa-long-arrow-right
+				.col-12.col-md-3
+					.box-area
+						p.box-detail Lĩnh vực hoạt động
+				.col-12.col-md-9
+					.owl-area.owl-carousel.owl-theme
+						.item
+							.box-area-slider
+								img(src="./img/intro-1.png", alt="intro").img-fluid
+								p.text-area Nội thất 
+								span
+									i.fa.fa-long-arrow-right
+						.item
+							.box-area-slider
+								img(src="./img/intro-2.png", alt="intro").img-fluid
+								p.text-area Thiết kế
+								span
+									i.fa.fa-long-arrow-right
+						.item
+							.box-area-slider
+								img(src="./img/intro-3.png", alt="intro").img-fluid
+								p.text-area Xây dựng
+								span
+									i.fa.fa-long-arrow-right
 	section.article-intro
 		.container-fluid.no-gutters
 			.row.no-gutters
@@ -72,19 +74,19 @@ block body
 	section.article-chart
 		.container
 			.row
-				.col-12.col-sm-6.col-md-3
+				.col-6.col-sm-6.col-md-3
 					.chart-text
 						p.chart-number 100+
 						p.chart-detail Lorem ipsum
-				.col-12.col-sm-6.col-md-3
+				.col-6.col-sm-6.col-md-3
 					.chart-text
 						p.chart-number 800+
 						p.chart-detail Lorem ipsum
-				.col-12.col-sm-6.col-md-3
+				.col-6.col-sm-6.col-md-3
 					.chart-text
 						p.chart-number 25+
 						p.chart-detail Lorem ipsum
-				.col-12.col-sm-6.col-md-3
+				.col-6.col-sm-6.col-md-3
 					.chart-text
 						p.chart-number 100+
 						p.chart-detail Lorem ipsum
@@ -92,65 +94,59 @@ block body
 	//- Dự án đạc biệt
 	section.article-special
 		.container-fluid.no-gutters
-			.owl-two.owl-carousel.owl-theme
-				.item
-					.row.no-gutters
-						.col-12.col-sm-12.col-lg-9.order-2.order-lg-1
+			.row.no-gutters
+				.col-12.col-sm-12.col-lg-9.order-2.order-lg-1
+					.owl-two.owl-carousel.owl-theme
+						.item
 							img(src="./img/project-5.png", alt="")
-						.col-12.col-lg-3.order-1.order-lg-2
-							.box-content
-								.box-1
-									p.text-box-1 Dự án nổi bật
-								.box-2
-									p.box-2-title Nhà hàng lạc nam
-									p.box-2-address 156 bùi thị xuận, đà lạt
-									p.box-2-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, aut! Minus sunt id illo, adipisci
-				.item
-					.row.no-gutters
-						.col-12.col-sm-12.col-lg-9.order-2.order-lg-1
+						.item
 							img(src="./img/project-5.png", alt="")
-						.col-12.col-lg-3.order-1.order-lg-2
-							.box-content
-								.box-1
-									p.text-box-1 Dự án nổi bật
-								.box-2
-									p.box-2-title Nhà hàng lạc nam
-									p.box-2-address 156 bùi thị xuận, đà lạt
-									p.box-2-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, aut! Minus sunt id illo, adipisci
-				.item
-					.row.no-gutters
-						.col-12.col-sm-12.col-lg-9.order-2.order-lg-1
+						.item
 							img(src="./img/project-5.png", alt="")
-						.col-12.col-lg-3.order-1.order-lg-2
-							.box-content
-								.box-1
-									p.text-box-1 Dự án nổi bật
-								.box-2
-									p.box-2-title Nhà hàng lạc nam
-									p.box-2-address 156 bùi thị xuận, đà lạt
-									p.box-2-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, aut! Minus sunt id illo, adipisci
+						.item
+							img(src="./img/project-5.png", alt="")
+						.item
+							img(src="./img/project-5.png", alt="")
+						.item
+							img(src="./img/project-5.png", alt="")
+				.col-12.col-lg-3.order-1.order-lg-2
+					.box-content
+						.box-1
+							p.text-box-1 Dự án nổi bật
+						.box-2
+							p.box-2-title Nhà hàng lạc nam
+							p.box-2-address 156 bùi thị xuận, đà lạt
+							p.box-2-detail Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, aut! Minus sunt id illo, adipisci
 			//- Dự án nhỏ
 	section.article-project
 		.container-fluid.no-gutters
 			.row.no-gutters
-				.col-12.col-sm-6.col-lg-3
-					.box
-						img(src="./img/project-2.png", alt="intro").img-fluid
-						p.text-project nhà hàng lạc nam
-				.col-12.col-sm-6.col-lg-3
-					.box
-						img(src="./img/project-3.png", alt="intro").img-fluid
-						p.text-project acb bình dương 
-
-				.col-12.col-sm-6.col-lg-3
-					.box
-						img(src="./img/project-2.png", alt="intro").img-fluid
-						p.text-project chung cư điện biên phủ
-
-				.col-12.col-sm-6.col-lg-3
-					.box
-						img(src="./img/project-1.png", alt="intro").img-fluid
-						p.text-project acb chợ lớn
+				.col
+					.owl-project.owl-carousel.owl-theme
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-2.png", alt="intro").img-fluid
+									p.text-project nhà hàng lạc nam
+									
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-3.png", alt="intro").img-fluid
+									p.text-project acb bình dương 
+									
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-2.png", alt="intro").img-fluid
+									p.text-project acb chợ lớn
+									
+						a(href="#")
+							.item
+								.box
+									img(src="./img/project-1.png", alt="intro").img-fluid
+									p.text-project acb chợ lớn
+									
 	section.article-partner
 		.container
 			.row

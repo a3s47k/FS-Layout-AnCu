@@ -31,6 +31,36 @@ items:1
 }
 })
 
+
+$('.owl-project').owlCarousel({
+	loop:true,
+	dots: false,
+	nav:false,
+	autoplay:true,
+	autoplayTimeout:5000,
+	responsiveClass:true,
+	responsive:{
+		0:{
+			items:1,
+			nav:true,
+		},
+		768:{
+			items:2,
+			nav:true,
+		},
+		992:{
+			
+			nav:false,
+			items:3
+		},
+			1200:{
+			
+
+			items:4
+		}
+	}
+	})
+
 $('.owl-brand').owlCarousel({
 loop:true,
 dots: false,
@@ -60,7 +90,38 @@ responsive:{
 })
 
 
+$('.owl-area').owlCarousel({
+	loop:true,
+	dots: false,
+	nav:false,
+	autoplay:true,
+	autoplayTimeout:5000,
+	responsiveClass:true,
+	responsive:{
+		0:{
+			items:1,
+			nav:true,
+		},
+		330:{
+			items:2,
+			nav:true,
+		},
+		768:{
+			items:3,
+			nav:true,
+		},
+		992:{
+			
+			nav:false,
+			items:3
+		},
+			1200:{
+			
 
+			items:3
+		}
+	}
+	})
 
 
 
